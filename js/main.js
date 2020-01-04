@@ -13,8 +13,8 @@ if (d >= 0) {
   var y = (-b - Math.sqrt(b*b - 4*a*c))/(2*a);
   console.log("x: " + x + " y: " + y);
   document.write("<h3>Equation Roots:</h3><br>")
-  document.write("<p class='roots'>" + x.toFixed(3) + "</p>");
-  document.write("<p class='roots'>" + y.toFixed(3) + "</p>");
+  document.write("<div class='roots'><p>" + x.toFixed(3) + "</p>");
+  document.write("<p>" + y.toFixed(3) + "</p>");
   document.write("</div>");
 
 } else {

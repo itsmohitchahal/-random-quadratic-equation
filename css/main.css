@@ -4,7 +4,7 @@ body {
   background: #e1f5fe
 }
 
-p, h1 {
+.explanation p, h1 {
   margin: 0;
   padding: 50px;
 }
