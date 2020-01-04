@@ -4,54 +4,7 @@
     <meta charset="utf-8">
     <title>Random Quadratic Equations (SOLVED!)</title>
     <link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
-
-
-    <style>
-      body {
-        font-family: 'Kulim Park', sans-serif;
-        background: #e1f5fe
-      }
-
-      #container {
-        text-align: center;
-        background: white;
-        padding: 0 0 15px 0;
-        max-width: 1000px;
-        margin: 0 auto;
-        border-radius: 25px 25px 25px 25px;
-      }
-
-      .roots {
-        background: #b5ffff;
-        margin: 5px auto;
-        min-width: 100px;
-        max-width: 200px;
-        border-radius: 5px;
-        padding: 5px;
-
-      }
-
-      .heading {
-        background: #49a7cc;
-        margin-bottom: 0;
-        border-radius: 25px 25px 0 0;
-
-      }
-
-      .explanation {
-        background: #80d8ff;
-        margin-top: 0;
-      }
-      p, h1 {
-        margin: 0;
-        padding: 50px;
-      }
-
-      h3 {
-        margin-bottom: 0;
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/main.css">
 
 
   </head>
@@ -63,31 +16,7 @@
       <div class="explanation">
         <p>Using JavaScript's Math.random, we create 3 random integer numbers ranging from -500 to 499<br>We then use the Quadratic Equation Formula to find the roots through JavaScript arithmetic operatins<br>You can see that sometimes it says "No real roots". That is because not every quadratic equation has roots that are real numbers. <a href="https://www.purplemath.com/modules/quadform.htm" target="_blank">Learn more here.</a></p>
       </div>
-      <script>
-      var a = Math.floor(Math.random()*1000) - 500;
-      console.log("a: " + a);
-      var b = Math.floor(Math.random()*1000) - 500;
-      console.log("b: " + b);
-      var c = Math.floor(Math.random()*1000) - 500;
-      console.log("c: " + c);
-      var d = (b*b - 4*a*c);
-      document.write("<h2>(" + a + "x<sup>2</sup>) + (" + b + "x) + (" + c + ") = 0</h2>");
-
-
-      if (d >= 0) {
-        var x = (-b + Math.sqrt(b*b - 4*a*c))/(2*a);
-        var y = (-b - Math.sqrt(b*b - 4*a*c))/(2*a);
-        console.log("x: " + x + " y: " + y);
-        document.write("<h3>Equation Roots:</h3><br>")
-        document.write("<p class='roots'>" + x.toFixed(3) + "</p>");
-        document.write("<p class='roots'>" + y.toFixed(3) + "</p>");
-        document.write("</div>");
-
-      } else {
-        console.log("No real roots for the equation");
-          document.write("<div class='roots'>No real roots</div>");
-
-      }
+      <script src="js/main.js">
       </script>
     </div>
   </body>
